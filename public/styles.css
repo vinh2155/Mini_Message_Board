@@ -1,0 +1,136 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #3E4046;
+
+    color: white;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+a.add {
+    width: 150px;
+    padding: 9px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #A9567C;
+    font-size: 1rem;
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+
+nav h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px 10px 20px;
+    box-shadow: 2px 2px 6px 0px white;
+}
+
+a.btn {
+    padding: 20px 10px 30px;
+    max-width: 300px;
+    min-height: 160px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.messageWrapper > a:nth-child(even) {
+    background-color: #649B69;
+}
+.messageWrapper > a:nth-child(odd) {
+    background-color: #415658;
+}
+
+a.btn:hover {
+    transform: translateY(-2.9px);
+    box-shadow: 1px 2px 4px 0px #6C7E93;
+    transition: linear 1s ease-in-out;
+}
+
+.detail {
+    background-color: #649B69;
+    padding: 20px 10px 30px;
+    /* width: 300px; */
+    min-height: 160px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.detail p {
+    margin-top: 10px;
+}
+
+.messageWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 30px 10px 5px;
+}
+
+form {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 8px;
+    border: 2px solid #6C7E93;
+    padding: 20px;
+    background-color: #415658;
+    font-size: 1rem;
+    margin: 40px auto;
+}
+
+input, textarea {
+    padding: 4px;
+    outline: none;
+    border-radius: 3px;
+    /* border: none; */
+}
+
+input:focus{
+    border-color: #1482EB;
+    outline: none;
+}
+
+
+
+form button{
+    width: 100px;
+    border: none;
+    padding: 7px;
+    margin: auto;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #A9567C;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #9D6290;
+    box-shadow: 1px 2px 6px 0px whiteSmoke;
+    transform: translate(-.51px, -.71px);
+    transition:cubic-bezier(0.47, 0, 0.745, 0.715) 4s ease-in-out  ;
+}
+
+.error {
+    text-align: center;
+    margin: 40px;
+}
+
+a.error {
+    margin: 10px auto;
+    display: block;
+    background-color: rgb(255, 37, 37);
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <%- include('navbar')%>
+    <div class="form-container">
+        <form method="POST" action="/new">
+            <label for="user" >Username</label> <%# The for is a way to link the label and the input with the id="user". If you click on username, it will bring you to the input field %>
+            <input type="text" id="user" 
+                   name="user" placeholder="Username"
+                   required
+                   oninvalid="this.setCustomValidity('Please enter your username')"
+                   oninput="this.setCustomValidity('')" >
+            <label for="text">Message Body</label>
+            <textarea name="text" id="text" placeholder="Message Text"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
