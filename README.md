@@ -19,15 +19,15 @@
 
 ## Some Questions I Asked Myself
 
-### 2. How is the data saved? Even when I refresh, the messages are still the same.
+### 1. How is the data saved? Even when I refresh, the messages are still the same.
 
 We don't use any database (MongoDB, PostgreSQL - Structured data like tables for user profiles, messages) or cloud storage (Firebase, AWS - unstructured data like profile pictures, file attachments), but the data persits thanks to the server's memory. It's in the ram of my computer.
 
-### 5. Is EJS the frontend here? 
+### 2. Is EJS the frontend here? 
 
 EJS is our template engine, it's how we create dynamic HTML on the server-side. It's not really the frontend since it does not follow the traditional path: Browser downloads HTML/CSS/JS -> Runs JS in browser. Instead, it is: Browser -> Requests page -> Server runs EJS -> Server sends finished HTML. We call this **server-side templating**.
 
-### 6. Why build this project?
+### 3. Why build this project?
 
 I wanted to create a backend for the first time with the Express framework. I want to get used to the technologies and concepts like:
 
